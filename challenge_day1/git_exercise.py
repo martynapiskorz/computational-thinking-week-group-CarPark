@@ -6,6 +6,6 @@ from mate import get_myname as name5
 
 def funct():
     print(f"This is CarPark. We are {name1()}, {name2()}, {name3()}, {name4()}, {name5()}.\n")
-    story = paragraph1(), paragraph1b(), paragraph1c()
+    story = paragraph1(), paragraph1b(), paragraph1c(), paragraph1e()
     return story
 funct()
