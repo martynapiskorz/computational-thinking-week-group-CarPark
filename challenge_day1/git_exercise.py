@@ -5,7 +5,12 @@ from eryk import name_eryk as name4, paragraph1b
 from mate import get_myname as name5
 
 def funct():
+<<<<<<< HEAD
+    print(f"This is CarPark. We are {name1()}, {name2()}, {name3()}, {name4()}.\n")
+    story = paragraph1(), paragraph1b(), paragraph1c(), paragraph1d(), paragraph1e()
+=======
     print(f"This is CarPark. We are {name1()}, {name2()}, {name3()}, {name4()}, {name5()}.\n")
     story = paragraph1(), paragraph1b(), paragraph1c()
+>>>>>>> 80c5765c51d78b5fa3039f9b2497bcebaca347a9
     return story
 funct()

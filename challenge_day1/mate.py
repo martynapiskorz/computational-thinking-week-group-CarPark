@@ -1,4 +1,4 @@
-def get_myname():
+def get_name():
     return "Mate"
 
 '''character name: Daniel'''
