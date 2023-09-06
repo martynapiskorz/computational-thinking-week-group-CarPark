@@ -3,6 +3,3 @@ def solution_station_4(n):
         return "False"
     else:
         return "True"
-    
-test_number = 7
-result = solution_station_4(test_number)
