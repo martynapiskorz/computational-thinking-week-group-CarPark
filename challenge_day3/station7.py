@@ -4,7 +4,7 @@ def solution_station_7(expression):
     for var, val in variables.items():
         expression = expression.replace(var, str(val))
 
-    return print(eval(expression))
+    return float(eval(expression))
 
 
     

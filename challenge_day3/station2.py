@@ -12,7 +12,5 @@ def solution_station_2(date_in_string):
 
     return jap_day
 
-date_in_string = '2023-01-01'
+date_in_string = '2023-01-31'
 jap_day = solution_station_2(date_in_string)
-
-print(jap_day)
