@@ -6,4 +6,3 @@ def solution_station_1(n):
         i += 1
     return l[-1]
 
-print(solution_station_1(2))
