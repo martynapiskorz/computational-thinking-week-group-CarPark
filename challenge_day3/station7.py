@@ -4,7 +4,7 @@ def solution_station_7(expression):
     for var, val in variables.items():
         expression = expression.replace(var, str(val))
 
-    return eval(expression)
+    return print(eval(expression))
 
 solution_station_7('a+b')
 
