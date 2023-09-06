@@ -6,10 +6,10 @@ df = pd.read_excel(table_path)
 
 def solution_station_5(name):
     try:
-        team = df.loc[df['Student firstname'] == name, 'Team']
+        team = df.loc[df['Student firstname'] == name, 'Team'].values[0]
         return team
     except IndexError:
         return "This person is not in the course"
     
-print('solution_station_5(Jelle)')
+print(solution_station_5('Jelle'))
     
