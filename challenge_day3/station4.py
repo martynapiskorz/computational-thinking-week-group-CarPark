@@ -6,5 +6,3 @@ def solution_station_4(n):
     
 test_number = 7
 result = solution_station_4(test_number)
-
-print(f'{test_number} is {result}')

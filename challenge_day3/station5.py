@@ -11,5 +11,4 @@ def solution_station_5(name):
     except IndexError:
         return "This person is not in the course"
     
-print(solution_station_5('Jelle'))
     

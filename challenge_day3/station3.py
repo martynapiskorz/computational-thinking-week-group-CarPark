@@ -5,4 +5,3 @@ def solution_station_3(n):
         print('False')
     
     
-solution_station_3(6)
