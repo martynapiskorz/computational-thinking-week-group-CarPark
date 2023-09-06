@@ -7,7 +7,8 @@ def get_day(date_in_string):
     
     return days[day]
 
-date_in_string = 2023-01-01
+date_in_string = '2023-01-01'
 english_day = get_day(date_in_string)
 
 print(english_day)
+
