@@ -6,6 +6,5 @@ def solution_station_7(expression):
 
     return print(eval(expression))
 
-solution_station_7('a+b')
 
     
