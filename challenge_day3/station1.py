@@ -1,9 +1,9 @@
 def solution_station_1(n):
-    if n<0:
-        print("Incorrect input")
-    elif n==0:
-        return(0)
-    elif n==1:
-        return(1)
-    else:
-        return (solution_station_1(n-1)+solution_station_1(n-2))
+    n=int(n)
+    l = [0, 1]
+    i = 2
+    while i <= n:
+        l.append(l[-1] + l[-2])
+        i += 1
+    return l[-1]
+

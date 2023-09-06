@@ -1,11 +1,15 @@
-from maja import get_name as name1, paragraph1d
-from martyna import string_name as name2, paragraph1, paragraph1e
-from Vincent import name as name3, paragraph1c
-from eryk import name_eryk as name4, paragraph1b
-from mate import get_myname as name5, paragraph1e
+
+
+import maja
+import martyna
+import Vincent
+import eryk
+import mate
+
+c1, c2, c3, c4, c5 = maja.character(), martyna.character(), Vincent.character(), eryk.character(), mate.character()
 
 def funct():
-    print(f"This is CarPark. We are {name1()}, {name2()}, {name3()}, {name4()}, {name5()}.\n")
-    story = paragraph1(), paragraph1b(), paragraph1c(), paragraph1d(), paragraph1e()
+    print(f"This is CarPark. We are {maja.get_name()}, {martyna.string_name()}, {Vincent.name()}, {eryk.name_eryk()}, {mate.get_myname()}.\n")
+    story = martyna.paragraph1(c1, c2, c3, c4, c5), eryk.paragraph1b(c1, c2, c3, c4, c5), Vincent.paragraph1c(c1, c2, c3, c4, c5), maja.paragraph1d(c1, c2, c3, c4, c5), martyna.paragraph1e(c1, c2, c3, c4, c5), mate.paragraph2a(c1, c2, c3, c4, c5)
     return story
 funct()
