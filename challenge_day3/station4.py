@@ -1,3 +1,5 @@
+#if odd then true if even then false
+
 def get_odd(n):
     if n % 2 == 0:
         return "False"
