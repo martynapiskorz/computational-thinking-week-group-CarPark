@@ -7,24 +7,23 @@ if (!requireNamespace("jsonlite", quietly = TRUE)) {
 library(jsonlite)
 
 # Read the JSON file into a data frame
-json_data <- fromJSON("data1.json")
+json_data <- fromJSON("challenge_day4/fulldata/data1.json")
 
 # Convert the 'people' list to a data frame
 people_df <- as.data.frame(json_data$people)
 
 # Replace NAs with column means
-for(col_name in names(people_df)) {
-  if(is.numeric(people_df[[col_name]])) {
+for (col_name in names(people_df)) {
+  if (is.numeric(people_df[[col_name]])) {
     # Calculate mean, excluding NAs
     col_mean <- mean(people_df[[col_name]], na.rm = TRUE)
-    
     # Replace NAs with the calculated mean
     people_df[[col_name]][is.na(people_df[[col_name]])] <- col_mean
   }
 }
 
 # Replace the 'people' list in the original data with the modified data frame
-json_data$people <- person_df
+json_data$people <- people_df
 
 # Convert the updated data back to JSON format
 json_text <- toJSON(json_data, pretty = TRUE)
